@@ -209,20 +209,20 @@ Note: settings starting with `AZURE_SEARCH` are only needed when using Azure Ope
 |AZURE_SEARCH_VECTOR_COLUMNS||List of fields in your Azure AI Search index that contain vector embeddings of your documents to use when formulating a bot response. Represent these as a string joined with "|", e.g. `"product_description|product_manual"`|
 |AZURE_SEARCH_PERMITTED_GROUPS_COLUMN||Field from your Azure AI Search index that contains AAD group IDs that determine document-level access control.|
 |AZURE_SEARCH_STRICTNESS|3|Integer from 1 to 5 specifying the strictness for the model limiting responses to your data.|
-|AZURE_OPENAI_RESOURCE||the name of your Azure OpenAI resource|
-|AZURE_OPENAI_MODEL||The name of your model deployment|
-|AZURE_OPENAI_ENDPOINT||The endpoint of your Azure OpenAI resource.|
-|AZURE_OPENAI_MODEL_NAME|gpt-35-turbo-16k|The name of the model|
-|AZURE_OPENAI_KEY||One of the API keys of your Azure OpenAI resource|
-|AZURE_OPENAI_TEMPERATURE|0|What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. A value of 0 is recommended when using your data.|
-|AZURE_OPENAI_TOP_P|1.0|An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. We recommend setting this to 1.0 when using your data.|
-|AZURE_OPENAI_MAX_TOKENS|1000|The maximum number of tokens allowed for the generated answer.|
+|AZURE_OPENAI_RESOURCE|AAI-East-2|the name of your Azure OpenAI resource|
+|AZURE_OPENAI_MODEL|GPT20240409|The name of your model deployment|
+|AZURE_OPENAI_ENDPOINT|https://aai-east-2.openai.azure.com/|The endpoint of your Azure OpenAI resource.|
+|AZURE_OPENAI_MODEL_NAME|gpt-4|The name of the model|
+|AZURE_OPENAI_KEY|cb9ebf9f98bf4f33a5b780361fdec6bf|One of the API keys of your Azure OpenAI resource|
+|AZURE_OPENAI_TEMPERATURE|0.7|What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. A value of 0 is recommended when using your data.|
+|AZURE_OPENAI_TOP_P|0.95|An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. We recommend setting this to 1.0 when using your data.|
+|AZURE_OPENAI_MAX_TOKENS|8192|The maximum number of tokens allowed for the generated answer.|
 |AZURE_OPENAI_STOP_SEQUENCE||Up to 4 sequences where the API will stop generating further tokens. Represent these as a string joined with "|", e.g. `"stop1|stop2|stop3"`|
-|AZURE_OPENAI_SYSTEM_MESSAGE|You are an AI assistant that helps people find information.|A brief description of the role and tone the model should use|
-|AZURE_OPENAI_PREVIEW_API_VERSION|2024-02-15-preview|API version when using Azure OpenAI on your data|
+|AZURE_OPENAI_SYSTEM_MESSAGE|You are an expert in Microsoft products and Microsoft Azure with over 20 years' experience. Your task is to be the technical solutions assistant for a Microsoft Cloud Solutions Architect who supports Microsoft customers. When presented with a technical issue that a customer is having, your task is to first take a deep breath, think step by step, and provide a comprehensive response with multiple options if there are multiple solutions available. Your responses MUST be exhaustive and provide as much detail as possible and follow all of Microsoft best practices.|A brief description of the role and tone the model should use|
+|AZURE_OPENAI_PREVIEW_API_VERSION|turbo-2024-04-09|API version when using Azure OpenAI on your data|
 |AZURE_OPENAI_STREAM|True|Whether or not to use streaming for the response|
 |AZURE_OPENAI_EMBEDDING_NAME||The name of your embedding model deployment if using vector search.
-|UI_TITLE|Contoso| Chat title (left-top) and page title (HTML)
+|UI_TITLE|CSMbot| Chat title (left-top) and page title (HTML)
 |UI_LOGO|| Logo (left-top). Defaults to Contoso logo. Configure the URL to your logo image to modify.
 |UI_CHAT_LOGO|| Logo (chat window). Defaults to Contoso logo. Configure the URL to your logo image to modify.
 |UI_CHAT_TITLE|Start chatting| Title (chat window)
